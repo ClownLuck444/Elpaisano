@@ -1,0 +1,10 @@
+.product-image{
+        width: 250px;
+        height: 250px;
+}
+
+.swal-center {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }

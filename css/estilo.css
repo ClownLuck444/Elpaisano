@@ -1,0 +1,125 @@
+.cabeza {
+  /*background-image: url("../img/1.jpg");*/
+  /*width: 100%;*/
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+label {
+  min-width: 80px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: rgb(89, 27, 27);
+  font-family: 'Exo';
+}
+
+.modal{
+	position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #111111bd;
+    display: flex;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity .6s .9s;
+    --transform: translateY(-100vh);
+    --transition: transform .8s;
+
+}
+.modal--show{
+    opacity: 1;
+    pointer-events: unset;
+    transition: opacity .6s;
+    --transform: translateY(0);
+    --transition: transform .8s .8s;
+}
+
+.modal__container{
+    margin: auto;
+    width: 90%;
+    max-width: 600px;
+    max-height: 90%;
+    background-color: #fff;
+    border-radius: 6px;
+    padding: 3em 2.5em;
+    display: grid;
+    gap: 1em;
+    place-items: center;
+    grid-auto-columns: 100%;
+    transform: var(--transform);
+    transition:var(--transition);
+}
+.container {
+  width: 500px;
+  padding: 20px;
+  background: white;
+  margin: auto;
+  margin-top: 50px;
+}
+
+.titulo {
+  text-align: center;
+  border: solid rgb(176, 176, 209) 1px;
+  border-style: dashed;
+  padding: 15px;
+  color: rgb(95, 93, 93);
+}
+.padre {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  color: rgb(128, 128, 128);
+}
+.nombre,
+.apellido,
+.usuario,
+.clave {
+  display: flex;
+  flex-direction: column;
+}
+input {
+  padding: 10px;
+}
+input:focus {
+  outline: solid rgb(158, 158, 158) 2px;
+}
+.cuenta {
+  display: flex;
+  flex-direction: column;
+}
+
+.boton {
+  width: 100%;
+  background: rgb(0, 132, 255);
+  border: none;
+  color: white;
+  padding: 15px 0;
+  font-size: 18px;
+}
+.cuenta a{
+  padding: 10px;
+  color: blue;
+  font-weight: bold;
+}
+
+.alerta{
+  text-align: center;
+  color: red;
+}
+
+
+.success{
+  text-align: center;
+  color: rgb(31, 156, 0);
+}
+
